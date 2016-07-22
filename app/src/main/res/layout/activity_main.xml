@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="itour.sanslab.readbook2.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:id="@+id/txtCategory"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgKiemHiep"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:src="@drawable/cho"
+        android:layout_marginTop="34dp"
+        android:layout_alignTop="@+id/txtCategory"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgCoTich"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:src="@drawable/ga"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgNgonTinh"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:src="@drawable/trau"
+        android:layout_marginEnd="31dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignEnd="@+id/txtCategory" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgTieuThuyet"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:src="@drawable/ho"
+        android:layout_alignTop="@+id/img18"
+        android:layout_alignStart="@+id/textView2" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img18"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:src="@drawable/heo"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="28dp" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgKinhDi"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:src="@drawable/de"
+        android:layout_alignTop="@+id/imgTieuThuyet"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Kiếm hiệp"
+        android:id="@+id/textView"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/imgKiemHiep"
+        android:layout_alignEnd="@+id/imgKiemHiep"
+        android:layout_alignStart="@+id/imgKiemHiep" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cổ tích"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imgCoTich"
+        android:layout_alignStart="@+id/imgCoTich"
+        android:layout_alignEnd="@+id/imgCoTich"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ngôn tình"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/imgNgonTinh"
+        android:layout_alignStart="@+id/imgNgonTinh"
+        android:layout_alignEnd="@+id/imgNgonTinh"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="18+"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/img18"
+        android:layout_alignEnd="@+id/img18"
+        android:layout_alignStart="@+id/img18"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tiểu thuyết"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/imgTieuThuyet"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Kinh dị"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/imgKinhDi"
+        android:layout_alignEnd="@+id/imgKinhDi"
+        android:layout_alignStart="@+id/imgKinhDi"
+        android:gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvRecent"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txtCategory" />
+</RelativeLayout>
